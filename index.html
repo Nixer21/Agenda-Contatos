@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agenda de Contatos <img src="./img/logo topo.png" alt="Logo"></h1>
+        </header>
+        <form id="agenda-contato">
+            <input type="text" id="contato" required placeholder="Nome do Contato" />
+            <input type="tel" id="telefone" required placeholder="(xx) xxxx-xxxx" pattern="[0-9]{10,11}" maxlength="10"/>
+            <button type="submit">Cadastrar +</button>
+        </form>
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            <h1><img src="./img/cont.png" alt="Con">Nome do Contato</h2>
+                        </th>
+                        <th>
+                            <h1><img src="./img/Tel.png" alt="Tel">Numero de Contato</h2>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total de Contatos &#160 </td>
+                        <td id="total-contatos"></td>
+                    </tr>
+                </tfoot>
+            </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
